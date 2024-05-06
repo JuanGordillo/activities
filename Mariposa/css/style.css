@@ -1,0 +1,193 @@
+#titulo { 
+    color:blue;
+}
+
+p.especial {
+    color:brown;
+}
+
+p.texto { /* p.nombre clase, es para aplicar a todas las etiquetas p que contienen dicho nombre*/
+    color:darkcyan;
+}
+
+div p { /*En todas las etiquetas de div que contengan hijos de etiqueta p aplicar x estilo*/
+
+    color: aquamarine;
+
+}
+
+div h2, div h3 { /*Para estilo de más de una etiqueta*/
+
+    color:chartreuse;
+}
+
+*{
+  font-size: 24px;  
+  /*color:black;*/
+}/*selecionar todos los elementos que tengamos en un html, pero no las que ya se hallan definido un propiedad*/
+
+/*Esto es un comentario*/
+
+/*
+.color {
+    color: #ff0000;
+}
+
+.color {
+    color: rgb(0, 255, 0);
+}
+*/
+.color {
+    /* border: 5px rgb(4, 51, 74) outset; */
+    /*
+    dottend
+    dashed
+    solid
+    double
+    {groove
+    ridge
+    inset
+    outset} objetos tridimensionales
+    none
+    hidden 
+    */   
+
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+#fondo{
+    background-color: rgba(255, 0, 0); /*rgba para trnspariencia de color*/ 
+    /*opacity: 0.3;*/ /*Transpariencia completa al elemento*/
+    height: 200px;
+    /*background-image: url('Gt.jpg');*/
+    /*background-repeat:repeat-y ;*/ /*no-repeat Para no repetir la imagen /repeat-x posicion horizonata repeat-y vertical /*/
+    /*background-position: center top ;*/ /*Posicion de la imagen eje x left, right, center and y top, center and bottom */
+    background: #f00 url('Gt.jpg') repeat-y center bottom / 100px 100px; /*Propiedad para todo menos altura*/
+    /*background-size: 100px 100px;*/  /*Redimencionar la imagen de fondo auto, cover, contain*/
+}
+
+.margen {
+    background-color:chocolate;
+    margin: 15px ;  /*margin: 15px 20px 25px 30px; de todos los lados y similar con padding*/
+    padding: 30px 15px 5px; /*margen interna*/
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;/*ocultar lo que se sale de un elemento(hidden) y scroll coloca mager blanca extra y deslizar para ver mejor la informacion*/
+    outline: 1px solid red; /*Borde pro fuera del borde*/
+}
+
+.text {
+    font-family: 'Roboto' sans-serif;
+    text-align:center;
+    text-decoration: underline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link{
+    color:blueviolet;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color:chartreuse;
+}
+
+a:active{
+    color: red;
+}
+/*A las propiedades de link se pueden aplicar todas las otras*/
+
+ul {
+    background-color: cyan;
+    list-style-type: georgian;/*Eliminar punto de lista*/
+    /*padding-left: 0;
+    /*list-style-position: inside;*/
+}
+
+table{
+   width: 100%; 
+   border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {/*Selecionar elementos pares e impares por ejemplo en tablas (even = par odd=impar) */
+    background-color: #eee; /*cambiar color fondo*/
+    }
+
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+/*Dyplay indicar como vamos a colocar los elementos de html en nuestro documento*/
+
+span {
+    display: block; /*salto de linea*/
+    /*display:none;*/ /*oculta elementos*/
+    /*visibility: hidden;*/ /*oculta elementos*/
+    max-width: 300px; /*ancho maximo a los elementos*/
+    background-color: #f00;
+}
+
+.inline {
+    display: inline; /*elementos en una misma lineas*/
+}
+
+#position {
+    position: sticky; /*Pueden ser static, relative, fixed, absolute, sticky */
+    left: 20px;
+    top:25px;
+}
+
+/*Propiedad que permite que los elementos floten*/
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.container{
+    height: 200px;
+}
+
+.column {
+    margin: 0 ;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+.center{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}

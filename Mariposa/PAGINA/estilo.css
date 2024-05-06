@@ -1,0 +1,191 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #98b39d94;
+}
+
+header {
+    background-color: #c1d84c;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section article, figcaption{
+    font-size: 18px;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+section article {
+    transition: all 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover {
+
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.30); /*desplazar sobra de la imagen derecha o izquirda*/
+}
+
+section a:hover {
+
+    color: rgb(77, 202, 23);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+   /* text-align: center;*/
+}
+
+.imagen {
+    width: 400px;
+}
+
+table{
+    width: 100%; 
+    border-collapse: collapse;
+ }
+ 
+ th, td {
+     border: solid 1px #1e495d;
+     padding: 5px;
+ }
+ 
+ th {
+     background-color: rgb(237, 22, 51);
+     color: white;
+     text-align: left;
+ }
+ 
+ tr:nth-child(even) {/*Selecionar elementos pares e impares por ejemplo en tablas (even = par odd=impar) */
+     background-color: #9b366c; /*cambiar color fondo*/
+     }
+ 
+ tr:hover{
+     background-color: #5d871a;
+     cursor: pointer;
+ }
+ 
+
+.from-register {
+    width: 400px;
+    background: #104957;
+    padding: 18px; 
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 20px #160226;
+}
+
+.from-register h4 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.from-register h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(73, 15, 4);
+    text-align: center;
+}
+
+.from-register select {
+    font-size: 20px;
+    margin-bottom: 18px;
+    background-color: #16d116;
+    color: rgb(7, 4, 14);
+    text-align: left;
+}
+
+.from-register textarea {
+    font-size: 18px;
+    margin-bottom: 18px;
+    border: 1px solid #cfb41d;
+    background-color: #bfd772;
+    color: rgb(7, 4, 14);
+    text-align: left;
+}
+
+.controls {
+    width: 100%;
+    background: #98a2a5;
+    padding: 3px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #500505;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.from-register p {
+    height: 40px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.from-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.from-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.from-register .botons {
+    width: 100%;
+    background: #ed7e0e;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #d76010;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+

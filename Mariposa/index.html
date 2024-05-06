@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+   <title>Mi primera web</title>
+   <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+   </style>
+</head>
+<body>
+
+    <table style="width: 300px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Hot wheels</td>
+                <td>7.000 cop</td>
+            </tr>
+            <tr>
+                <td>Glock 1911</td>
+                <td>23.501 cop</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 30.501 cop</td>
+        </tfoot>
+    </table>
+
+    <ul> <!--ul lista no ordenada-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <ol> <!--ol lista ordenada-->
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">Sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">Sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">Sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="POST"> <!--GET: Envia valores de los comapos por la url POST:Información se envía de forma no visible. -->
+        <label for="nombre">Nombre</label>
+        <input value="mariposa" type="text" id="nombre" name="nombre" placeholder="Nombre" />
+        <!--En type se coloca el tipo de dato o propiedad
+        submit, text, number, email, password, radio, checkbox, file-->
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido" />
+        <br><br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">este es un valor por defecto</textarea>
+        <br><br>
+        <input type="submit"/>  <!--No se puede agregar etiquetas dentro de ellos-->
+        <br><br>
+        <input type="email" name="email" id="email" required>
+        <label for="email">Email</label>
+        <br><br>
+        <button type="button"><img src="img/Berreta.jpg" />Tipo button</button> <!--Tres valores: button(utilizar javascript), reset, submit-->
+        <br><br>
+        <button type="reset">Tipo reset</button>
+        <br><br>
+        <button type="submit">Tipo submit</button>
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi qinto heading</h5>
+    <h6>hot wheels</h6>
+    <p>La vida y la muerte</p>
+    <p>luz y oscuridad</p>
+    <hr> <!--Separado lineas-->
+    <h2>Poema uno</h2>
+    <p>La luna y el pescador</p>
+    <p>La <span style = "color:blue">luna</span> da luz <!--span referencia textp dentro de otra etiqueta para estilos o manipular--> 
+        y el percador compañia,<br><br>
+        en las noches oscuras y sonoras. 
+    </p>
+    <!--Comentario-->
+    <a href="https://www.youtube.com/channel/UC44pgC5JxSFX0IJIC4K4kUQ">Ir a armaperdia</a>
+    <br><br>
+    <a target="_blank" href="https://nerfmania.com/">Ir a nerfmania</a>
+    <br>
+    <img src="https://concepto.de/wp-content/uploads/2020/04/mariposa-e1588208139231.jpg" height="300"/>
+    <br>
+    <img src="img/autof.jpg" width="400"/>
+</body>
+</html>
